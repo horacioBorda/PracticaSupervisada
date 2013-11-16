@@ -1,0 +1,4 @@
+ssp_proyectos:
+    resource: "@SSPProyectosBundle/Resources/config/routing.yml"
+    prefix:   /
+

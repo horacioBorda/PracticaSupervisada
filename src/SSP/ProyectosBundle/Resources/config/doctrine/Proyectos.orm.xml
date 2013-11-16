@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="SSP\ProyectosBundle\Entity\Proyectos" table="proyectos">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="idconvenio" type="integer" column="idConvenio" nullable="true"/>
+    <field name="nombre" type="string" column="nombre" length="45" nullable="true"/>
+    <field name="descripcion" type="string" column="descripcion" length="45" nullable="true"/>
+    <field name="estado" type="string" column="estado" length="45" nullable="true"/>
+    <field name="fechafin" type="date" column="fechaFin" nullable="true"/>
+    <field name="fechain" type="date" column="fechaIn" nullable="true"/>
+    <field name="resultados" type="string" column="resultados" length="45" nullable="true"/>
+    <field name="idresponsable" type="integer" column="idResponsable" nullable="true"/>
+    <field name="idtipo" type="integer" column="idTipo" nullable="true"/>
+    <field name="idresolucion" type="integer" column="idResolucion" nullable="true"/>
+  </entity>
+</doctrine-mapping>

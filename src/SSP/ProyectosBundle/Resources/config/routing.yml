@@ -1,0 +1,6 @@
+ssp_proyectos_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: SSPProyectosBundle:Default:index }
+ssp_proyectos_list:
+    pattern: /listAll
+    defaults: { _controller: SSPProyectosBundle:Proyecto:list}

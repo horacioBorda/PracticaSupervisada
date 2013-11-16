@@ -1,0 +1,36 @@
+{# empty Twig template #}
+<h1>Listado Proyectos</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Estado</th>
+{#        <th>Fecha finalizacion</th>
+        <th>Fecha inicio</th>#}
+        <th>Resultados</th>
+        <th>Convenio</th>
+        <th>Responsable</th>
+        <th>Tipo</th>
+        <th>Resolucion</th>
+        
+        {% for proyecto in proyectos %}
+            <tr>
+                <td>{{proyecto.id}}</td>
+                <td>{{proyecto.nombre}}</td>
+                <td>{{proyecto.descripcion}}</td>
+                <td>{{proyecto.estado}}</td>
+{#                <td>{{proyecto.fechaFin->date('format')}}</td>
+                <td>{{proyecto.fechaIn}}</td>#}
+                <td>{{proyecto.resultados}}</td>
+                <td>{{proyecto.idConvenio}}</td>
+                <td>{{proyecto.idResponsable}}</td>
+                <td>{{proyecto.idTipo}}</td>
+                <td>{{proyecto.idResolucion}}</td>
+                
+                
+            </tr>    
+        {% endfor %}
+        
+    
+</table>{# empty Twig template #}{# empty Twig template #}
